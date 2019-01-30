@@ -49,8 +49,6 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`challenge` (
   `University_ID` INT NOT NULL,
   `Year` INT NOT NULL,
   PRIMARY KEY (`University_ID`, `Year`),
-  INDEX `fk_University_has_Year_Year1_idx` (`Year` ASC) VISIBLE,
-  INDEX `fk_University_has_Year_University_idx` (`University_ID` ASC) VISIBLE,
   CONSTRAINT `fk_University_has_Year_University`
     FOREIGN KEY (`University_ID`)
     REFERENCES `ITM_DB`.`University` (`University_ID`)
@@ -92,8 +90,6 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`Students` (
   `Students_Name` VARCHAR(100) NULL,
   `Students_Phon` VARCHAR(45) NULL,
   `Students_year` VARCHAR(2) NULL,
-  INDEX `fk_Students_challenge1_idx` (`challenge_University_ID` ASC, `challenge_Year` ASC) VISIBLE,
-  INDEX `fk_Students_Ativity1_idx` (`Ativity_Ativity_ID` ASC) VISIBLE,
   PRIMARY KEY (`Students_ID`),
   CONSTRAINT `fk_Students_challenge1`
     FOREIGN KEY (`challenge_University_ID` , `challenge_Year`)
@@ -120,7 +116,6 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`Teachers` (
   `challenge_University_ID` INT NOT NULL,
   `challenge_Year` INT NOT NULL,
   PRIMARY KEY (`Teachers_ID`),
-  INDEX `fk_Teachers_challenge1_idx` (`challenge_University_ID` ASC, `challenge_Year` ASC) VISIBLE,
   CONSTRAINT `fk_Teachers_challenge1`
     FOREIGN KEY (`challenge_University_ID` , `challenge_Year`)
     REFERENCES `ITM_DB`.`challenge` (`University_ID` , `Year`)
@@ -139,8 +134,6 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`Responsibility` (
   `Ativity_Ativity_ID` INT NOT NULL,
   `Responsibility_status` VARCHAR(20) NULL,
   PRIMARY KEY (`Teachers_Teachers_ID`, `Ativity_Ativity_ID`),
-  INDEX `fk_Teachers_has_Ativity_Ativity1_idx` (`Ativity_Ativity_ID` ASC) VISIBLE,
-  INDEX `fk_Teachers_has_Ativity_Teachers1_idx` (`Teachers_Teachers_ID` ASC) VISIBLE,
   CONSTRAINT `fk_Teachers_has_Ativity_Teachers1`
     FOREIGN KEY (`Teachers_Teachers_ID`)
     REFERENCES `ITM_DB`.`Teachers` (`Teachers_ID`)
@@ -164,8 +157,6 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`joinAtivity` (
   `Ativity_ID` INT NOT NULL,
   `joinAtivity_Results` VARCHAR(10) NULL,
   PRIMARY KEY (`Students_ID`, `Ativity_ID`),
-  INDEX `fk_Students_has_Ativity_Ativity1_idx` (`Ativity_ID` ASC) VISIBLE,
-  INDEX `fk_Students_has_Ativity_Students1_idx` (`Students_ID` ASC) VISIBLE,
   CONSTRAINT `fk_Students_has_Ativity_Students1`
     FOREIGN KEY (`Students_ID`)
     REFERENCES `ITM_DB`.`Students` (`Students_ID`)
