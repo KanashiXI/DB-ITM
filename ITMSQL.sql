@@ -392,18 +392,18 @@ ENGINE = InnoDB;
 -- DELETE FROM `ITM_DB`.`Activity` WHERE (`studentId` = '1');
 -- DELETE FROM `ITM_DB`.`Activity` WHERE (`studentId` = '2');
 -- DELETE FROM `ITM_DB`.`Activity` WHERE (`studentId` = '3');
-INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('1', 'Dota2', 'เกมส์', '2019/02/15', '19.00-00.00');
-INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('2', 'PUBG Mobile', 'เกมส์', '2019/02/15', '19.00-00.00');
-INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('3', 'ROV', 'เกมส์', '2019/02/15', '19.00-00.00');
-INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('4', 'CS:GO', 'เกมส์', '2019/02/15', '19.00-00.00');
-INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('5', 'ตอบปัญหาเทคโนโลยี', 'วิชาการ', '2019/02/16', '09.00-12.00');
-INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('6', 'เขียนโปรแกรม', 'วิชาการ', '2019/02/16', '09.00-12.00');
-INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('7', 'สร้าง Web', 'วิชาการ', '2019/02/16', '09.00-12.00');
-INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('8', 'บาสเกตบอล', 'กีฬา', '2019/02/16', '09.00-15.00');
-INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('9', 'แชร์บอล', 'กีฬา', '2019/02/16', '09.00-15.00');
-INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10', 'แบดมินตัน', 'กีฬา', '2019/02/16', '09.00-15.00');
-INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('11', 'ฟุตซอล', 'กีฬา', '2019/02/16', '09.00-15.00');
-INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('12', 'วอลเลย์บอล', 'กีฬา', '2019/02/16', '09.00-15.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10001', 'Dota2', 'เกมส์', '2019/02/15', '19.00-00.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10002', 'PUBG Mobile', 'เกมส์', '2019/02/15', '19.00-00.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10003', 'ROV', 'เกมส์', '2019/02/15', '19.00-00.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10004', 'CS:GO', 'เกมส์', '2019/02/15', '19.00-00.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10005', 'ตอบปัญหาเทคโนโลยี', 'วิชาการ', '2019/02/16', '09.00-12.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10006', 'เขียนโปรแกรม', 'วิชาการ', '2019/02/16', '09.00-12.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10007', 'สร้าง Web', 'วิชาการ', '2019/02/16', '09.00-12.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10008', 'บาสเกตบอล', 'กีฬา', '2019/02/16', '09.00-15.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10009', 'แชร์บอล', 'กีฬา', '2019/02/16', '09.00-15.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10010', 'แบดมินตัน', 'กีฬา', '2019/02/16', '09.00-15.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10011', 'ฟุตซอล', 'กีฬา', '2019/02/16', '09.00-15.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10012', 'วอลเลย์บอล', 'กีฬา', '2019/02/16', '09.00-15.00');
 
 
 -- -----------------------------------------------------
