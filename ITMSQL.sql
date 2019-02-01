@@ -359,6 +359,17 @@ INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`
 INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('117', 'ฐิมาพร เพชรแก้ว', '0914534353', '100');
 INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('130', 'พุทธิพร ธนธรรมเมธี', '0977865380', '100');
 INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('135', 'เยาวเรศ ศิริสถิตย์กุล', '0900128549', '100');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('352', 'นิฟาตมะห์ มะกาเจ', '894186001', '300');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('356', 'จารุณี แซ่หลี', '697541782', '300');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('326', 'อาทิตย์ อินทรสิทธิ์', '824675989', '300');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('328', 'ทัดดาว ปานสมบัติ', '646023095', '300');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('367', 'นิฟาตมะห์ มะกาเจ', '897129852', '300');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('382', 'ภาขวัญ ริยาพันธ์', '625566248', '300');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('351', 'นูริน ดือเร๊ะ', '676290740', '300');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('362', 'รัตติกานต์ แซ่ลิ่ม', '853597216', '300');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('368', 'อารียุทธ สมาแอ', '826551402', '300');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('354', 'มายือนิง อิสอ', '853010773', '300');
+
 
 -- -----------------------------------------------------
 -- Table `ITM_DB`.`Activity`
@@ -367,28 +378,32 @@ DROP TABLE IF EXISTS `ITM_DB`.`Activity` ;
 
 CREATE TABLE IF NOT EXISTS `ITM_DB`.`Activity` (
   `Ativity_ID` INT NOT NULL,
-  `Activity_Type` VARCHAR(45) NULL,
   `Activity_Name` VARCHAR(45) NULL,
-  `Activity_date` VARCHAR(45) NULL,
+  `Activity_Type`VARCHAR(45) NULL,
+  `Activity_date` DATE NULL,
   `Activitycol_Time` VARCHAR(45) NULL,
   PRIMARY KEY (`Ativity_ID`))
 ENGINE = InnoDB;
 
-DELETE FROM `lab3db`.`student` WHERE (`studentId` = '1');
-DELETE FROM `lab3db`.`student` WHERE (`studentId` = '2');
-DELETE FROM `lab3db`.`student` WHERE (`studentId` = '3');
-INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('1', 'Dota2', 'เกมส์', '15/2/2562', '19.00-00.00');
-INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('2', 'PUBG Mobile', 'เกมส์', '15/2/2562', '19.00-00.00');
-INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('3', 'ROV', 'เกมส์', '15/2/2562', '19.00-00.00');
-INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('4', 'CS:GO', 'เกมส์', '15/2/2562', '19.00-00.00');
-INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('5', 'ตอบปัญหาเทคโนโลยี', 'วิชาการ', '16/2/2562', '09.00-12.00');
-INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('6', 'เขียนโปรแกรม', 'วิชาการ', '16/2/2562', '09.00-12.00');
-INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('7', 'สร้าง Web', 'วิชาการ', '16/2/2562', '09.00-12.00');
-INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('8', 'บาสเกตบอล', 'กีฬา', '16/2/2562', '09.00-15.00');
-INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('9', 'แชร์บอล', 'กีฬา', '16/2/2562', '09.00-15.00');
-INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('10', 'แบดมินตัน', 'กีฬา', '16/2/2562', '09.00-15.00');
-INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('11', 'ฟุตซอล', 'กีฬา', '16/2/2562', '09.00-15.00');
-INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('12', 'วอลเลย์บอล', 'กีฬา', '16/2/2562', '09.00-15.00');
+-- ALTER TABLE `itm_db`.`activity` 
+-- CHANGE COLUMN `Activity_Type` `Activity_Name` VARCHAR(45) NULL DEFAULT NULL ,
+-- CHANGE COLUMN `Activity_Name` `Activity_Type` VARCHAR(45) NULL DEFAULT NULL ;
+
+-- DELETE FROM `ITM_DB`.`Activity` WHERE (`studentId` = '1');
+-- DELETE FROM `ITM_DB`.`Activity` WHERE (`studentId` = '2');
+-- DELETE FROM `ITM_DB`.`Activity` WHERE (`studentId` = '3');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('1', 'Dota2', 'เกมส์', '2019/02/15', '19.00-00.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('2', 'PUBG Mobile', 'เกมส์', '2019/02/15', '19.00-00.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('3', 'ROV', 'เกมส์', '2019/02/15', '19.00-00.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('4', 'CS:GO', 'เกมส์', '2019/02/15', '19.00-00.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('5', 'ตอบปัญหาเทคโนโลยี', 'วิชาการ', '2019/02/16', '09.00-12.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('6', 'เขียนโปรแกรม', 'วิชาการ', '2019/02/16', '09.00-12.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('7', 'สร้าง Web', 'วิชาการ', '2019/02/16', '09.00-12.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('8', 'บาสเกตบอล', 'กีฬา', '2019/02/16', '09.00-15.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('9', 'แชร์บอล', 'กีฬา', '2019/02/16', '09.00-15.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('10', 'แบดมินตัน', 'กีฬา', '2019/02/16', '09.00-15.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('11', 'ฟุตซอล', 'กีฬา', '2019/02/16', '09.00-15.00');
+INSERT INTO `ITM_DB`.`Activity` (`Ativity_ID`, `Activity_Name`,`Activity_Type`, `Activity_date`, `Activitycol_Time`) VALUES ('12', 'วอลเลย์บอล', 'กีฬา', '2019/02/16', '09.00-15.00');
 
 
 -- -----------------------------------------------------
@@ -495,16 +510,16 @@ INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALU
 INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61110888', '1');
 INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61114005', '1');
 INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61114864', '1');
-INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61110474', '2');
-INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61110490', '2');
-INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61110888', '2');
-INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61114005', '2');
-INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61114864', '2');
-INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61113239', '3');
-INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61113403', '3');
-INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61113619', '3');
-INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61113858', '3');
-INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61115184', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '59113654', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '60141231', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '59112631', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '59113969', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '59114009', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '59115170', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '59115600', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '59115618', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '59115899', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '59117184', '3');
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
