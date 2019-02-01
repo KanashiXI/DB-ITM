@@ -28,6 +28,10 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`University` (
   PRIMARY KEY (`University_ID`))
 ENGINE = InnoDB;
 
+INSERT INTO `itm_db`.`university` (`University_ID`, `University_Name`) VALUES ('100', 'Walailak University');
+INSERT INTO `itm_db`.`university` (`University_ID`, `University_Name`) VALUES ('200', 'Prince of Songkhla University Hatyai');
+INSERT INTO `itm_db`.`university` (`University_ID`, `University_Name`) VALUES ('300', 'Prince of Songkhla University Pattani');
+INSERT INTO `itm_db`.`university` (`University_ID`, `University_Name`) VALUES ('400', 'Thaksin University');
 
 -- -----------------------------------------------------
 -- Table `ITM_DB`.`Year`
@@ -39,6 +43,11 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`Year` (
   PRIMARY KEY (`Year`))
 ENGINE = InnoDB;
 
+INSERT INTO `itm_db`.`year` (`Year`) VALUES ('2015');
+INSERT INTO `itm_db`.`year` (`Year`) VALUES ('2016');
+INSERT INTO `itm_db`.`year` (`Year`) VALUES ('2017');
+INSERT INTO `itm_db`.`year` (`Year`) VALUES ('2018');
+INSERT INTO `itm_db`.`year` (`Year`) VALUES ('2019');
 
 -- -----------------------------------------------------
 -- Table `ITM_DB`.`challenge`
@@ -62,6 +71,11 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`challenge` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+INSERT INTO `itm_db`.`challenge` (`Year`, `University_ID`, `Host`) VALUES ('2015', '100', 'Walailak University');
+INSERT INTO `itm_db`.`challenge` (`Year`, `University_ID`, `Host`) VALUES ('2016', '200', 'Prince of Songkhla University Hatyai');
+INSERT INTO `itm_db`.`challenge` (`Year`, `University_ID`, `Host`) VALUES ('2017', '400', 'Thaksin University');
+INSERT INTO `itm_db`.`challenge` (`Year`, `University_ID`, `Host`) VALUES ('2018', '100', 'Walailak University');
+INSERT INTO `itm_db`.`challenge` (`Year`, `University_ID`, `Host`) VALUES ('2019', '200', 'Prince of Songkhla University Hatyai');
 
 -- -----------------------------------------------------
 -- Table `ITM_DB`.`Students`
@@ -82,6 +96,224 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`Students` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101192', 'นางสาวจริยาวดี เนียมนาค', '0894309156', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101242', 'นายจักรพงษ์ กระต่ายทอง', '0865287386', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101655', 'นางสาวจุฑาภรณ์ พุ่มมณี', '0971719806', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61102299', 'นายโชติวิชช์ วรเดช', '0887826793', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61103776', 'นายธิติพงศ์ ปุรินสุวรรณ', '0869010108', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61104139', 'นายนลธวัช แก้วจีน', '0869963417', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61105482', 'นายปานเทพ ศรีสมโภชน์', '0642421791', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61105631', 'นางสาวปิยมินทร์ ใจมา', '0858297793', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61105888', 'นายพนมกร มหาสวัสดิ์', '0852057373', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61107686', 'นายวรเมธ ขวัญนิมิตร', '0896596058', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61108262', 'นางสาวศรินญา คงเส้ง', '0602733603', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61108718', 'นางสาวสจีหัสสา อินทรวิมล', '0813556395', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61111191', 'นางสาวจิราวรรณ ช่วยแก้ว', '0672955205', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61111415', 'นางสาวชุติมา อนันตกูล', '0693225977', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61113239', 'นายวิทวัส ช่วยพนัง', '0842572729', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61113403', 'นายศิวกร หนักแน่น', '0859350651', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61113619', 'นายสิทธินนท์ เดิมหลิ่ม', '0668275243', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61113858', 'นายสุวิจักขณ์ พิศสุพรรณ', '0897372942', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61115184', 'นายก่อกฤษฎิ์ อินทิศ', '0897728940', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61115267', 'นางสาวชนิกานต์ พจมานพงศ์', '0622238320', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61116141', 'นายณธกร จิระอรรคพงษ์', '0824943853', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61118717', 'นายรัตธนาตย์ รัตนพันธุ์', '0973540272', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61120531', 'นายชุมพร แก้วพิทักษ์', '095-2640750', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61122685', 'นางสาวสัณห์สินี รักเนียม', '0857247598', '1', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110673', 'นางสาวเก็จมณี ทองใบ', '0985170491', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110863', 'นายคุนัชญ์ ทองมี', '0620735706', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60111465', 'นายชลธาร แก้วเจริญ', '0987047473', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60112869', 'นายธีนพัฒน์ รัตนวงศ์', '0935754721', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60113008', 'นายนฤเบศ รีวรรณ', '0965605539', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60113479', 'นายบุรินทร์ พันธุ์ชาติ', '0937131682', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60113834', 'นางสาวปัญญพัฒน์ เจือบุญ', '0895962839', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60114105', 'นายพงศธร รักทอง', '0956207196', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60118296', 'นายศิริศักดิ์ ใหม่สุดใจ', '0962578132', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60140365', 'นายกิตติพงษ์ ทูรย์ภานุประพันธ์', '0942026721', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60140852', 'นางสาวจุติมาศ มาลัย', '0610362751', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60141900', 'นางสาวธัญวรัตน์ จินดา', '0987252639', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60144235', 'นางสาวศิริรัตน์ วิชิตแย้ม', '0872772564', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60144730', 'นายสุทธิพงษ์ จินตาแก้ว', '0913152524', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60144961', 'นางสาวเสาวรัตน์ ชวนดี', '0950132150', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60146313', 'นายชัชวาล สุคนธปฏิภาค', '0968099926', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60191053', 'นางสาวอะวาฏิฟ ยูโซ๊ะ', '0622145166', '2', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59112557', 'นายชัยสิทธิ์ คุณาปกรณ์การ', '0975642001', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59113423', 'นายณัฐดนัย จารย์โพธิ์', '0896523142', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59113589', 'นายณัฐพล บุญสุวรรณ์', '0874589216', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59114462', 'นายธนวัฒน์ อุไรรัตน์', '0996542858', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59114819', 'นางสาวธิดารัตน์ สุรัตวดี', '0812545641', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59119438', 'นายวณัฐพงค์ ปริตรศิรประภา', '0832401026', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59119610', 'นายวรวิบูล ไกรแก้ว', '0986540112', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('591199410', 'นางสาววิชุตา หมาดอะดำ', '0987135415', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59120535', 'นางสาวศิริกัญญา หัตถการ', '0863258742', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59121368', 'นางสาวสิดารัศมิ์ ขาวบาง', '0956513241', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59121970', 'นางสาวสุภาวดี โพธิ์แป้น', '0902678464', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59123570', 'นายอารีฟีน กุลดี', '0822674161', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59141242', 'นางสาวณกรตา เปียทอง', '0805542216', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59142901', 'นายพัฒนะศักดิ์ พิเศษศิลป์', '0875412586', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59145003', 'นายอัสมาวี ลาเตะ', '0987261582', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59145219', 'นายเอกวิชญ์ จำนงจิต', '0885541254', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59147918', 'นายณัฐวุฒิ ชูบัวทอง', '0965320124', '3', '100');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61100962', 'นางสาวเกศิณี คำสุวรรณ', '0927481942', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101259', 'นายจักรพันธ์ ลับแสง', '0977892546', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101374', 'นางสาวจิณห์วรา แสงผดุง', '0871936595', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101747', 'นางสาวจูวัยนีย์ ยีสา', '0948261903', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61102323', 'นายซีน ละเอียด', '0943810183', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61102943', 'นายณัฐวุฒิ ศรีบุญ', '0622145166', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61104378', 'นางสาวน้ำทิพย์ ยอดโสภณ', '0826472910', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61105193', 'นางสาวประณิตา กะตากูล', '0977834902', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61105573', 'นางสาวปิยฉัตร หมื่นแก้ว', '0861846391', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61106217', 'นายพันธิน เธียรสุคนธ์', '0953819190', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61106902', 'นางสาวภูมิชีวา กลิ่นทอง', '0867262819', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61108874', 'นางสาวสหัสมณี สุวรรณชาตรี', '0952728191', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61109443', ' นางสาวสุพิชชา เพ็ชรประสมกูล', '0954781389', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61109641', 'นางสาวสุวารี เส็นบัตร', '0867183967', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61110474', 'นายอัสรอฟ ลาเต๊ะ', '0892736179', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61110490', 'นายอาทิตย์ สายแก้ว', '0925371910', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61110888', 'นางสาวกวินทิพย์ ชูชัยทยากุล', '0979273618', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61114005', 'นายอภิยุต เชื้อมณี', '0982736271', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61114864', 'นางสาวญาณิศา อินพฤกษา', '0948372511', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61114914', 'นางสาวนูรีย์ สะดี', '0972936351', '1', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110590', 'นางสาวกิตติยา อ่ำปลอด', '0851234567', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60111069', 'นายจิรภัทร ศรีบุญเอียด', '0976875795', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60114014', 'นางสาวปิยะวรรณ หงษ์ชู', '0852409279', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60119260', 'นายอภิรักษ์ ศรีน้อย', '0844326273', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60120276', 'นายกิตติศักดิ์ เยาว์ดำ', '0988992323', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60120474', 'นายธนภัทร เทพจันทร์', '0911901099', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60140019', 'นายอัดดีน ตุลยาพงศ์', '0966843168', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60140928', 'นางสาวชนากานต์ ไพรบึง', '0977865380', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60140985', 'นางสาวชยานันท์ ศรียาบ', '0844725328', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60141124', 'นางสาวซูฮัยระห์ สมูนิง', '0897610123', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60141207', 'นางสาวฐิติกร เหมือนเสน', '0976540320', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60141231', 'นายศักนรินทร์ โอทองคำ', '0955932345', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60141280', 'นายพงศกร อ่อนชะเวียง', '0900128549', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60141785', 'นางสาวธนาพร หมาดทิ้ง', '0818809900', '2', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59110023', 'นางสาวกชกร ฟักทองผล', '0825725237', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59110155', ' นางสาวกนกอร พึ่งบุญ', '0896570188', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59110460', 'นายกฤตภาส ไตรสุวรรณ์', '0980898282', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59111930', 'นายอภิสิทธิ์ สุวรรณมณี', '0976433433', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59112367', 'นายพีรวัส นุเคราะห์ชีพ', '0911899850', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59112615', 'นายคิม บุญเสริม', '0914724278', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59112631', 'นางสาวชุติกาญจน์ ราชฤทธิ์', '0944389802', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59113654', 'นายณัฐวัฒน์ ลาภามาศ', '0917490345', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59113969', 'นางสาวดารียา สังกะหนู', '0988756201', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59114009', 'นางสาวเดียนา สาและ', '0985674803', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59115170', 'นางสาวนภสร สมพงษ์', '0878777887', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59115600', 'นางสาวนาตาช่า บินมะดีเย๊าะ', '0926489501', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59115618', 'นางสาวนาถรภี ศักดี', '0935171058', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59115899', 'นางสาวนูรมี การี', '0847392017', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59117184', 'นายธนากรณ์ ศิริผล', '0953718105', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59118844', 'นายพงศ์ปณต ชูทวด', '0948291649', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59119669', 'นางสาววรางคณา ลดาวรรษ์', '0862518496', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59119784', 'นางสาววลัยลักษณ์ ลิมปิยประพันธ์', '0856281948', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59120998', 'นายเศรษฐกิจ สร้างดำรงคุณ', '0826374913', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59122481', 'นายพลรัตน์ รัตนพันธ์', '0965810593', '3', '400');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61100285', 'นายกรินทร์ เกตุพงษ์', '0851234567', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61100640', ' นายกัมพล เงินส่ง', '0976875795', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101184', 'นายจริณทร์พร ชูทอง', '0852409279', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101234', 'นายจักรกฤษ มาศภูมิ', '0844326273', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101291', 'นางสาวจันทกานติ์ ฉิมเกื้อ', '0988992323', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101481', 'นายจิรพนธ์ ใจยะกว้าง', '0911901099', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101812', ' นายเจษฎา แสงสุวรรณ', '0966843168', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101929', 'นางสาวชนกานต์ บุญสุด', '0977865380', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61102158', 'นางสาวชัญญานุช แซ่เจีย', '0844725328', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61102166', 'นางสาวชัญญานุช ปานแก้ว', '0844725328', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61102182', ' นายชัยรัตน์ อินรินทร์', '0976540320', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61102695', 'นายณัฐชานนท์ ทองน้อย', '0955932345', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61103115', 'นางสาวดุสิตตา ปิดเมือง', '0900128549', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61103271', 'นางสาวทิพมาดา ทองเรือง', '0818809900', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61103388', 'นายธนดล ศรีสมทรง', '0834678901', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61103610', 'นางสาวธัญชนก ส่งแสง', '0914534353', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61103867', 'นายธีระพงษ์ สวนแก้ว', '0976498200', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61103883', ' นางสาวนงนภัส บุญโยดม', '0988978799', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61103917', 'นายนนธวัฒชัย เมืองประทับ', '0971622639', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61104741', 'นายบริพัตร ด้วงชุม', '0811678900', '1', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110053', 'นางสาวกนกพิชญ์ หวังแก้ว', '0825725237', '2', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110202', 'นางสาวกรกนก แก้วคงจันทร์', '0896570188', '2', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110319', 'นางสาวกฤติยา ศรีบุญแก้ว', '0980898282', '2', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110558', 'นายกิตติชัย แขสระน้อย', '0976433433', '2', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110616', 'นางสาวกิติยา พันธ์แทน', '0911899850', '2', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110657', 'นายจักรกฤษ มาศภูมิ', '0914724278', '2', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60111119', 'นายธนดล ศรีสมทรง', '0944389802', '2', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60111267', 'นายวัชรพงษ์ สุขเกษม', '0917490345', '2', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60111804', 'นายนิธิศ ขวัญยืน', '0988756201', '2', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60112307', 'นางสาวตัซลีมา เจ๊ะแว', '0985674803', '2', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59110080', ' นางสาวกนกวรรณ ขอนทอง', '0927481942', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59110981', 'นางสาวกิตติยา แสงขาว', '0977892546', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59111120', 'นางสาวเกวลิน บ้านควน', '0871936595', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59113340', 'นางสาวณัฐญา บดีรัฐ', '0948261903', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59113506', 'นายณัฐนนท์ เพชรกูล', '0943810183', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59114314', 'นายธนพงษ์ ชุมพล', '0622145166', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59115030', 'นายธีระพงษ์ มะลิพันธ์', '0826472910', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59119891', 'นายวายัง ครชาตรี', '0977834902', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59120725', 'นางสาวศิวพร เขียวจันทร์', '0861846391', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59120881', 'นางสาวศุภมิตรา จบถิ่น', '0953819190', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59123380', 'นางสาวอัยลดา ชนะกุล', '0867262819', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59142026', 'นายนคริน บัวหลวง', '0952728191', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59142349', 'นางสาวเนตรศุภางค์ ชูพยัคฆ์', '0954781389', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59142513', 'นายปริญญา สุวรรณ', '0867183967', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59142802', 'นายพงศ์สรรศ์ สัมฤทธิ์', '0892736179', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59143545', 'นางสาวรัตนา มาผาสุข', '0925371910', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59144097', 'นายศิธร เพ็ญพร', '0979273618', '3', '300');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61100301', 'นายกฤตพณ ประสมแก้ว', '0825725237', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61100699', 'นางสาวกานติมา หมัดเต๊ะ', '0896570188', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101507', 'นางสาวจิรัชญา ญาณะวุฒิโท', '0980898282', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61101820', 'นายเจษฎากรณ์ ตีระกนก', '0976433433', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61102786', 'นางสาวณัฐนรี เทศวงษ์', '0911899850', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61103313', 'นางสาวทิษฏยา หนูทอง', '0914724278', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61103826', 'นายธีรภัทร คงกลั้ง', '0944389802', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61104105', 'นางสาวนฤมล จันทร์ไพฑูรย์', '0917490345', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61104147', 'นางสาวนวพรรษ ตะกี่', '0988756201', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61105599', 'นางสาวปิยธิดา พูลพิพัฒน์', '0985674803', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61105789', 'นายพงศกร จิตรแก้ว', '0878777887', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61106860', 'นายภานุพงศ์ เชาวลิต', '0926489501', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61107058', 'นางสาวมัณฑิตา แก้วสุด', '0935171058', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61107223', 'นางสาวเมธิณีย์ แก่นทอง', '0847392017', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61107330', 'นายรพีภัทร์ สมปรีดา', '0953718105', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61108130', 'นางสาววิลาวรรณ จริงเจียว', '0948291649', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61108148', 'นางสาววิลาวัลย์ เพ็งสกุล', '0862518496', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61108601', 'นายศุภกิตติ์ สาธุ', '0856281948', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61109294', 'นางสาวสุธิตรา สมปรีดา', '0826374913', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('61109468', 'นางสาวสุพิชชา รัตนชู', '0965810593', '1', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110129', 'นางสาวกนกวรรณ เรืองศรี', '0927481942', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110350', 'นางสาวกษมล สุรภักดี', '0977892546', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110434', 'นางสาวกัณฐิกา คงนวล', '0871936595', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110780', 'นางสาวเกษมณี ทุ่งหว้า', '0948261903', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60110947', 'นายจักรรินทร์ แพรกทอง', '0943810183', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60111200', 'นายเจตนรินทร์ พูดดี', '0622145166', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60111390', 'นางสาวชนัญชิดา หอมทิพย์', '0826472910', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60112323', 'นางสาวตัสนีม ปัญญาผล', '0977834902', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60112455', 'นายธนกฤต บุญเทียม', '0861846391', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60112687', 'นางสาวธัญชนก ทองแสน', '0953819190', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60112851', 'นางสาวธิวาภรณ์ ทองดี', '0867262819', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60112893', 'นายธีรพงศ์ หนูสุข', '0952728191', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60113024', 'นายกรินทร์ เกตุพงษ์', '0954781389', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60113354', 'นายกัมพล เงินส่ง', '0867183967', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60113958', 'นายปิยะ บุญมี', '0892736179', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60114238', 'นายพฤทธิ์ ดำศรี', '0925371910', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60114329', 'นางสาวพัชราภรณ์ เพ็ชรรัตน์', '0979273618', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('60114444', ' นายพิชาภพ พรัดเมือง', '0982736271', '2', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190017', 'นางสาวกนกพิชญ์ สพานทอง', '0851234567', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190025', 'นางสาวกนกวรรณ มณีโลก', '0976875795', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190033', 'นางสาวกรกนก ด้วงชู', '0852409279', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190041', 'นางสาวจริยมาศ เพชรมีศรี', '0844326273', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190058', 'นางสาวจารวี สาริยะสุนทร', '0988992323', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190066', 'นางสาวชนัญธิดา สุประวัติตระกูล', '0911901099', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190074', 'นางสาวชมพูนุท อ่องอนันตพงศ์', '0966843168', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190082', 'นางสาวชลธิชา สกุลชิต', '0977865380', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190090', 'นางสาวชัญญา รัตนพฤกษ์ขจร', '0844725328', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190108', 'นายณัชพล โชติพัฒน์', '0897610123', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190116', 'นายกษิดิศ ไชยสิทธิ์', '0976540320', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190124', 'นายภวัต ดาราสูรย์', '0955932345', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190132', 'นายศุภณัฐ คงหอม', '0900128549', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190140', 'นางสาวณัฐนุช จารุวัฒนสุนทร', '0818809900', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190157', 'นายตนัย แก้วจรัส', '0834678901', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190165', 'นางสาวตรีชฎา ส่องสุข', '0914534353', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190173', 'นายธนกฤต โอลาพฤกษ์', '0976498200', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190181', 'นางสาวธนัชญา ปรีชา', '0988978799', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190199', 'นายธนาตย์ สิริสงวนศักดิ์', '0971622639', '3', '200');
+INSERT INTO `itm_db`.`students` (`Students_ID`, `Students_Name`, `Students_Phon`, `Students_year`, `University_ID`) VALUES ('59190207', 'นายธเนศ วิเชียร', '0811678900', '3', '200');
+
 
 -- -----------------------------------------------------
 -- Table `ITM_DB`.`Teachers`
@@ -101,6 +333,32 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`Teachers` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('203', 'ธีรวัฒน์ หังสพฤกษ์', '0855737367', '200');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('256', 'ปริญญา เชาวนาศัย', '0873681433', '200');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('264', 'จิราวรรณ สำอางศรี', '0838230901', '200');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('215', 'อารีย์ ลิ้มวุฒิไกรจิรัฐ', '0882889319', '200');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('267', 'ณัฐธิดา สุวรรณโณ', '0857774151', '200');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('262', 'จันทวรรณ ปิยะวัฒน์', '0626244192', '200');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('226', 'อรรถพร หวังพูนทรัพย์', '0974407247', '200');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('201', 'รุชดี  บิลหมัด', '0857313568', '200');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('426', 'เจนจิรา วิศพันธ์', '0899489671', '400');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('482', 'เยาวภา หนูทอง', '0869154454', '400');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('462', 'นิวัตต์ เรืองณรงค์', '0856772410', '400');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('495', 'ญาณวุฒิ สุนทรกิจ', '0918428423', '400');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('421', 'อัตพล เทพสง', '0815620600', '400');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('431', 'อนุชา ชีช้าง', '0827973262', '400');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('444', 'เสริมศักดิ์ รัตนอุบล', '0624702003', '400');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('420', 'กฤษฎา คงหนู', '0635176314', '400');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('435', 'ไชยอุดร ษรเดช', '0864306034', '400');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('102', 'กาญจน์นัฐฐา ไชยศรียา', '0851234567', '100');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('103', 'กาญจนา หฤหรรษพงศ์', '0976875795', '100');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('104', 'โกสินทร์ กาฬรัตน์', '0852409279', '100');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('105', 'ขุนดี หลำสุบ', '0844326273', '100');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('153', 'อุหมาด หมัดอาด้ำ', '0897610123', '100');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('127', 'ประทีป คงกล้า', '0988992323', '100');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('117', 'ฐิมาพร เพชรแก้ว', '0914534353', '100');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('130', 'พุทธิพร ธนธรรมเมธี', '0977865380', '100');
+INSERT INTO `itm_db`.`teachers` (`Teachers_ID`, `Teachers_Name`, `Teachers_Phon`, `University_ID`) VALUES ('135', 'เยาวเรศ ศิริสถิตย์กุล', '0900128549', '100');
 
 -- -----------------------------------------------------
 -- Table `ITM_DB`.`Activity`
@@ -139,6 +397,18 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`Responsibility` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+INSERT INTO `itm_db`.`responsibility` (`Ativity_ID`, `Teachers_ID`, `status`) VALUES ('10001', '101', 'host');
+INSERT INTO `itm_db`.`responsibility` (`Ativity_ID`, `Teachers_ID`, `status`) VALUES ('10002', '102', 'host');
+INSERT INTO `itm_db`.`responsibility` (`Ativity_ID`, `Teachers_ID`, `status`) VALUES ('10003', '103', 'host');
+INSERT INTO `itm_db`.`responsibility` (`Ativity_ID`, `Teachers_ID`, `status`) VALUES ('10004', '104', 'host');
+INSERT INTO `itm_db`.`responsibility` (`Ativity_ID`, `Teachers_ID`, `status`) VALUES ('10005', '105', 'host');
+INSERT INTO `itm_db`.`responsibility` (`Ativity_ID`, `Teachers_ID`, `status`) VALUES ('10006', '153', 'host');
+INSERT INTO `itm_db`.`responsibility` (`Ativity_ID`, `Teachers_ID`, `status`) VALUES ('10007', '127', 'host');
+INSERT INTO `itm_db`.`responsibility` (`Ativity_ID`, `Teachers_ID`, `status`) VALUES ('10008', '117', 'host');
+INSERT INTO `itm_db`.`responsibility` (`Ativity_ID`, `Teachers_ID`, `status`) VALUES ('10009', '130', 'host');
+INSERT INTO `itm_db`.`responsibility` (`Ativity_ID`, `Teachers_ID`, `status`) VALUES ('10010', '135', 'host');
+INSERT INTO `itm_db`.`responsibility` (`Ativity_ID`, `Teachers_ID`, `status`) VALUES ('10011', '426', 'host');
+INSERT INTO `itm_db`.`responsibility` (`Ativity_ID`, `Teachers_ID`, `status`) VALUES ('10012', '482', 'host');
 
 -- -----------------------------------------------------
 -- Table `ITM_DB`.`joinAtivity`
@@ -162,6 +432,63 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`joinAtivity` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61101192', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61101242', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61101655', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61102299', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61103776', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61100301', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61100699', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61101507', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61101820', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61102786', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61100962', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61101259', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61101374', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '61101747', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10001', '59120998', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10002', '61100285', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10002', '61100640', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10002', '61101184', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10002', '61101234', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10002', '61102943', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10002', '61104378', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10002', '61105193', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10002', '61105573', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10002', '61103313', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10002', '61103826', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10002', '61104105', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10002', '61104147', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61107686', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61108262', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61108718', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61111191', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61111415', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61105599', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61105789', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61106860', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61107058', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61107223', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61106217', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61106902', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61108874', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61109443', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10003', '61109641', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61110474', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61110490', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61110888', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61114005', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61114864', '1');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61110474', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61110490', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61110888', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61114005', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61114864', '2');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61113239', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61113403', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61113619', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61113858', '3');
+INSERT INTO `itm_db`.`joinativity` (`Ativity_ID`, `Students_ID`, `Results`) VALUES ('10004', '61115184', '3');
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
