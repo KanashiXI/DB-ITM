@@ -374,6 +374,22 @@ CREATE TABLE IF NOT EXISTS `ITM_DB`.`Activity` (
   PRIMARY KEY (`Ativity_ID`))
 ENGINE = InnoDB;
 
+DELETE FROM `lab3db`.`student` WHERE (`studentId` = '1');
+DELETE FROM `lab3db`.`student` WHERE (`studentId` = '2');
+DELETE FROM `lab3db`.`student` WHERE (`studentId` = '3');
+INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('1', 'Dota2', 'เกมส์', '15/2/2562', '19.00-00.00');
+INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('2', 'PUBG Mobile', 'เกมส์', '15/2/2562', '19.00-00.00');
+INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('3', 'ROV', 'เกมส์', '15/2/2562', '19.00-00.00');
+INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('4', 'CS:GO', 'เกมส์', '15/2/2562', '19.00-00.00');
+INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('5', 'ตอบปัญหาเทคโนโลยี', 'วิชาการ', '16/2/2562', '09.00-12.00');
+INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('6', 'เขียนโปรแกรม', 'วิชาการ', '16/2/2562', '09.00-12.00');
+INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('7', 'สร้าง Web', 'วิชาการ', '16/2/2562', '09.00-12.00');
+INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('8', 'บาสเกตบอล', 'กีฬา', '16/2/2562', '09.00-15.00');
+INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('9', 'แชร์บอล', 'กีฬา', '16/2/2562', '09.00-15.00');
+INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('10', 'แบดมินตัน', 'กีฬา', '16/2/2562', '09.00-15.00');
+INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('11', 'ฟุตซอล', 'กีฬา', '16/2/2562', '09.00-15.00');
+INSERT INTO `lab3db`.`student` (`studentId`, `firstname`, `lastname`, `age`, `address`) VALUES ('12', 'วอลเลย์บอล', 'กีฬา', '16/2/2562', '09.00-15.00');
+
 
 -- -----------------------------------------------------
 -- Table `ITM_DB`.`Responsibility`
